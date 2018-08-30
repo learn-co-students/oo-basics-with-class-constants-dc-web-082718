@@ -8,7 +8,7 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    BRANDS << @brand unless BRANDS.first
+    BRANDS << @brand unless BRANDS.include?(brand)
     #push @brand into BRANDS array unless BRANDS already includes "brand"
   end
 
